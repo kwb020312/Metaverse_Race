@@ -5,6 +5,7 @@ import {
 } from "@react-three/drei";
 import { Suspense } from "react";
 import Track from "./Track";
+import Ground from "./Ground";
 
 const Scene = () => {
   return (
@@ -18,6 +19,8 @@ const Scene = () => {
 
       {/* 트랙 */}
       <Track />
+      {/* 지면 */}
+      <Ground />
     </Suspense>
   );
 };
