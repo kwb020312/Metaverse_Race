@@ -1,7 +1,8 @@
 import "./App.css";
+import Scene from "./Scene";
 
 function App() {
-  return <h1>Hello</h1>;
+  return <Scene />;
 }
 
 export default App;
