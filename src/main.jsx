@@ -1,9 +1,13 @@
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import { Canvas } from "@react-three/fiber";
+import "./main.css";
+import { Physics } from "@react-three/cannon";
+import Scene from "./Scene";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Canvas>
-    <App />
+    <Physics broadphase="SAP" gravity={[0, -2.6, 0]}>
+      <Scene />
+    </Physics>
   </Canvas>
 );
