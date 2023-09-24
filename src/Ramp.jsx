@@ -1,7 +1,7 @@
 import { useTrimesh } from "@react-three/cannon";
 import { useLoader } from "@react-three/fiber";
 import { useRef } from "react";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const Ramp = () => {
   const result = useLoader(GLTFLoader, "./models/ramp.glb");

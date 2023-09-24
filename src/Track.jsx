@@ -1,7 +1,7 @@
 import { useLoader } from "@react-three/fiber";
 import { useEffect } from "react";
 import { TextureLoader } from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { ColliderBox } from "./ColliderBox";
 import Ramp from "./Ramp";
 
