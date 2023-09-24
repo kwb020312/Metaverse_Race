@@ -3,15 +3,29 @@ import {
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Track from "./Track";
 import Ground from "./Ground";
 import Car from "./Car";
 
 const Scene = () => {
   // 3인칭 시점 관리
-  const [thirdPerson, setThirdPerson] = useState(true);
+  const [thirdPerson, setThirdPerson] = useState(false);
   const [cameraPosition, setCameraPosition] = useState([-6, 3.9, 6.21]);
+
+  useEffect(() => {
+    function keydownHandler(e) {
+      if (e.key === "k") {
+        if (thirdPerson)
+          setCameraPosition([-6, 3.9, 6.21 + Math.random() * 0.01]);
+        setThirdPerson((prev) => !prev);
+      }
+    }
+
+    window.addEventListener("keydown", keydownHandler);
+    return () => window.removeEventListener("keydown", keydownHandler);
+  }, [thirdPerson]);
+
   return (
     <Suspense fallback={null}>
       {/* 배경 */}

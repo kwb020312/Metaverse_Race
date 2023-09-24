@@ -7,7 +7,7 @@ import { WheelDebug } from "./WheelDebug";
 import { useControls } from "./useControls";
 import { Quaternion, Vector3 } from "three";
 
-const Car = (thirdPerson) => {
+const Car = ({ thirdPerson }) => {
   let mesh = useLoader(GLTFLoader, "/models/car.glb").scene;
 
   const position = [-1.5, 0.5, 3];
