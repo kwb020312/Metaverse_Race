@@ -3,6 +3,7 @@ import { useLoader } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 import { useWheels } from "./useWheels";
+import { WheelDebug } from "./WheelDebug";
 
 const Car = () => {
   let mesh = useLoader(GLTFLoader, "/models/car.glb").scene;
@@ -41,11 +42,16 @@ const Car = () => {
   }, [mesh]);
   return (
     <group ref={vehicle} name="vehicle">
+      {/* <primitive object={mesh} rotation-y={Math.PI} /> */}
       <mesh ref={chassisBody}>
         <meshBasicMaterial transparent={true} opacity={0.3} />
         <boxGeometry args={chassisBodyArgs} />
-        {/* <primitive object={mesh} rotation-y={Math.PI} /> */}
       </mesh>
+
+      <WheelDebug wheelRef={wheels[0]} radius={wheelRadius} />
+      <WheelDebug wheelRef={wheels[1]} radius={wheelRadius} />
+      <WheelDebug wheelRef={wheels[2]} radius={wheelRadius} />
+      <WheelDebug wheelRef={wheels[3]} radius={wheelRadius} />
     </group>
   );
 };

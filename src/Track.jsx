@@ -10,7 +10,7 @@ const Track = () => {
 
   useEffect(() => {
     colorMap.anisotropy = 16;
-  }, colorMap);
+  }, [colorMap]);
 
   let geometry = result.scene.children[0].geometry;
 

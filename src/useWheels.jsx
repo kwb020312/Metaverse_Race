@@ -23,22 +23,22 @@ export const useWheels = (width, height, front, radius) => {
   const wheelInfos = [
     {
       ...wheelInfo,
-      classisConnectionPointLocal: [-width * 0.65, height * 0.4, front],
+      chassisConnectionPointLocal: [-width * 0.65, height * 0.4, front],
       isFrontWheel: true,
     },
     {
       ...wheelInfo,
-      classisConnectionPointLocal: [width * 0.65, height * 0.4, front],
+      chassisConnectionPointLocal: [width * 0.65, height * 0.4, front],
       isFrontWheel: true,
     },
     {
       ...wheelInfo,
-      classisConnectionPointLocal: [-width * 0.65, height * 0.4, -front],
+      chassisConnectionPointLocal: [-width * 0.65, height * 0.4, -front],
       isFrontWheel: false,
     },
     {
       ...wheelInfo,
-      classisConnectionPointLocal: [width * 0.65, height * 0.4, -front],
+      chassisConnectionPointLocal: [width * 0.65, height * 0.4, -front],
       isFrontWheel: false,
     },
   ];
