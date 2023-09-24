@@ -1,7 +1,7 @@
 import { useBox, useRaycastVehicle } from "@react-three/cannon";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "/three/examples/jsm/loaders/gltfloader";
 import { useWheels } from "./useWheels";
 import { WheelDebug } from "./WheelDebug";
 import { useControls } from "./useControls";
