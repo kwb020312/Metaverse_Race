@@ -26,6 +26,7 @@ const Car = () => {
     useRef(null)
   );
 
+  // 바퀴 생성 관련 메서드 호출
   const [wheels, wheelInfos] = useWheels(width, height, front, wheelRadius);
 
   const [vehicle, vehicleApi] = useRaycastVehicle(

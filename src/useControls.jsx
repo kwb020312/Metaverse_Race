@@ -27,6 +27,7 @@ export const useControls = (vehicleApi, chassisApi) => {
     };
   }, []);
 
+  // 자동차 이동 관련
   useEffect(() => {
     if (controls.w) {
       vehicleApi.applyEngineForce(150, 2);
