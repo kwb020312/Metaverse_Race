@@ -2,7 +2,7 @@
 
 [레이싱 하러가기!](https://metaverse-race.vercel.app/)
 
-ThreeJS로 모델을 불러와 배치시키는 것 뿐 아니라, 주변 사물과 상호작용 할 수 있도록 연습하고자 생성된 프로젝트
+ThreeJS로 모델을 불러와 배치시키는 것 뿐 아니라, 주변 사물과 상호작용 할 수 있도록 연습하고자 생성된 프로젝트 
 
 ![image](https://github.com/kwb020312/Metaverse_Race/assets/46777310/c23a8ae5-0b0f-469b-a1cf-fc09fc0c2ec3)
 
